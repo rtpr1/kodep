@@ -1,4 +1,4 @@
-./gitlab-runner.exe register --url https://git.moysklad.ru/ --registration-token $REGISTRATION_TOKEN# Run PowerShell: https://docs.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7#with-administrative-privileges-run-as-administrator
+# Run PowerShell: https://docs.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7#with-administrative-privileges-run-as-administrator
 # Create a folder somewhere in your system ex.: C:\GitLab-Runner
 New-Item -Path 'C:\GitLab-Runner' -ItemType Directory
 
@@ -11,6 +11,7 @@ Invoke-WebRequest -Uri "https://gitlab-runner-downloads.s3.amazonaws.com/latest/
 # Register the Runner (steps below), then run
 .\gitlab-runner.exe install
 .\gitlab-runner.exe start
+
 
 
 ./gitlab-runner.exe register --url https://git.moysklad.ru/ --registration-token $REGISTRATION_TOKEN
